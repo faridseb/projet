@@ -75,12 +75,12 @@ body{
     cursor: pointer;
 }
 
-.container .text a:hover{
+.container .text p:hover{
     color: black;
 }
 
 .pop {
-    background-color: white;
+    background-color:#f2f2f2;
     padding: 30px;
     width: 320px;
     border-radius: 20px;
@@ -125,4 +125,26 @@ body{
 .pop .button a:hover{
     background-color:black ;
     color: white;
+}
+
+@media screen and (max-width:900px) {
+    .container{
+        max-width: 350px;
+    }
+
+    .container .text p {
+        font-size: 13px;
+        color:#0074D9 ;
+        cursor: pointer;
+    }
+
+    .container form input,.container form select{
+        font-size: 14px;
+    }
+
+    .container form input[type="submit"]{
+
+        font-size: 17px;
+
+    }
 }

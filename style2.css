@@ -39,13 +39,15 @@ header .navbar .navlinks ul li{
 }
 
 
-header .navbar .navlinks ul li a:hover{
+header .navbar .navlinks ul li a:hover,span:hover{
     color: #0074D9;
 }
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 80vh;
+    flex-direction: column;
 
 }
 .container h1{
@@ -53,4 +55,37 @@ header .navbar .navlinks ul li a:hover{
     color: white;
     font-weight: 500 ;
 }
+.container p{
+    color: white;
+    font-weight: 500 ;
+}
 
+.container a {
+    background-color:white  ;
+    color:  #0074D9;
+    border-radius: 13px;
+    padding: 10px;
+    font-weight: 500;
+}
+.container a:hover {
+    background-color:black  ;
+    color:  white;
+    border-radius: 13px;
+    padding: 10px;
+    transition: all ease .5s;
+}
+span{
+    color: white;
+}
+
+@media screen and (max-width:900px) {
+    span{
+        display: none;
+    }
+    .container h1 , p{
+        text-align: center;
+    }
+    .fa-user{
+        font-size: 25px;
+    }
+}
