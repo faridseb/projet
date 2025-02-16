@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Formulaire Utilisateur</title>
+</head>
+<body>
+    <div class="container" style="padding: 33px;">
+        <h1>INSCRIPTION  UTILISATEURS</h1>
+        <form action="" method="post">
+            <div class="box">
+                <label for="">Nom :</label>
+                <input type="text" placeholder="Entrer le Nom" name="nom" required>
+            </div>
+            <div class="box">
+                <label for="">Prenom :</label>
+                <input type="text" placeholder="Entrer le Prenom" name="prenom" required>
+            </div>
+            <div class="box">
+                <label for="">Role :</label>
+                <select name="user" id="" required>
+                    <option value="1">DEVELOPPEUR FRONT-END</option>
+                    <option value="2">DEVELOPPEUR BACK-END</option>
+                    <option value="3">DEVELOPPEUR FULL-STACK</option>
+                </select>
+            </div>
+            <div class="box">
+                <label for="">Email :</label>
+                <input type="email" placeholder="Entrer l'Email" name="email" required>
+            </div>
+            <div class="box">
+                <label for="">Mot de passe :</label>
+                <input type="password"  placeholder="Entrer le mot de passe" name="mdp" required>
+            </div>
+            <div class="box">
+                <input type="submit" value="S'INSCRIRE" name="ok">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

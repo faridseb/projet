@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Prompt", serif;
+    font-weight: 300;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #6a6a6a, #0074D9);
+}
+.container h1{
+    border-bottom: 1px solid black;
+    color: white;
+    text-align: center;
+}
+.container form .box{
+    margin-top: 20px;
+}
+.container form .box label {
+    color: white;
+    margin: 10px 0;
+}
+.container form input,.container form select{
+    width: 100%;
+    border-radius: 30px;
+    height: 40px; 
+    text-align: center;
+    border: 1px solid black;
+    font-size: 20px;
+    outline-color:#0074D9 ;
+}
+.container form select option:hover{
+    background-color: blue;
+}
+.container form input[type="submit"]{
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+}
+.container form input[type="submit"]:hover{
+    background-color: black;
+    transition: all ease .5s;
+    color: white;
+    font-size: 26px;
+}
