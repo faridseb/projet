@@ -50,4 +50,10 @@ body{
     transition: all ease .5s;
     color: white;
     font-size: 26px;
+    
+}
+
+
+.contenu{
+    padding: 0px;
 }

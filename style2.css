@@ -15,32 +15,122 @@ body{
     height: 100vh;
 }
 
+header{
+    background-color: white;
+    box-shadow: 2px 1px 5px #6c6c6c;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+}
+
+
+
 header .navbar{
     display: flex;
     justify-content: space-between;
 }
 header .navbar .logo{
     font-size: 40px;
-    color: white;
-    font-weight: 500 ;
-    margin : 10px ;
+    color: black;
+    font-weight: 900 ;
+    margin : 10px 30px ;
 }
 
-header .navbar a{
-    color: white;
-}
+
 
 
 header .navbar .navlinks ul {
     display: flex;
+    
 }
 header .navbar .navlinks ul li{
     margin: 30px;
+
+}
+.conn1{
+    color: black;
 }
 
+header .navbar .navlinks ul li a{
+    color: black;
+    text-decoration: none;
+}
 
 header .navbar .navlinks ul li a:hover,span:hover{
     color: #0074D9;
+}
+
+header i{
+    margin: 0 7px ;
+    font-size: 20px;
+}
+aside{
+    background-color: white;
+    width: 100px;
+    height: 100vh;
+    position: fixed;
+    box-shadow: 2px 1px 5px #6c6c6c;
+    
+
+
+}
+
+aside.active{
+    width: 300px;
+    transition: 1s;
+}
+
+aside.active .text{
+    display: block;
+}
+
+aside.active .fa-bars {
+    display: none;
+}
+
+aside.active .fa-xmark {
+    display: block;
+    font-size: 30px;
+
+}
+
+
+aside.active #icones{
+    display: none;
+}
+aside ul {
+    /* margin: 30px; */
+    cursor: pointer;
+}
+
+aside ul i{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+aside ul li:hover{
+    /* background-color: #0074D9; */
+}
+
+aside ul li{
+    margin-top: 60px;
+    padding: 0px;
+}
+.fa-xmark{
+    display: none;
+}
+aside ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.fa-bars{
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.text{
+    display: none;
 }
 .container{
     display: flex;
@@ -48,6 +138,7 @@ header .navbar .navlinks ul li a:hover,span:hover{
     align-items: center;
     height: 80vh;
     flex-direction: column;
+    width: 900px;
 
 }
 .container h1{
@@ -75,8 +166,84 @@ header .navbar .navlinks ul li a:hover,span:hover{
     transition: all ease .5s;
 }
 span{
+    color: black;
+}
+
+
+
+.container form .box{
+    margin-top: 20px;
+}
+.container form .box label {
+    margin: 10px 0;
     color: white;
 }
+.container form input,.container form select{
+    width: 100%;
+    border-radius: 7px;
+    height: 40px; 
+    text-align: center;
+    border: 1px solid black;
+    font-size: 20px;
+    outline-color:#0074D9 ;
+    background-color: #f2f2f2;
+}
+
+
+.container form input[type="submit"]{
+    background-color: #0074D9 ;
+    color:white ;
+    cursor: pointer;
+    font-size: 20px;
+    border: 1px solid #0074D9;
+}
+
+.container form input[type="submit"]:hover{
+    background-color: black;
+    transition: all ease .5s;
+    color: white;
+    font-size: 26px;
+}
+
+.container .text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .text p , .container .text a{
+    margin-top: 10px;
+    color:#0074D9 ;
+    cursor: pointer;
+}
+
+.container .text p:hover{
+    color: black;
+}
+
+.outil{
+    background-color: white;
+    padding: 40px 270px;
+    margin: 20px 0;
+}
+
+.outil p {
+    color: black;
+}
+
+.outil .titre {
+    font-weight: 800;
+}
+
+table td , table th{
+    text-align: center;
+}
+table td  a {
+    text-decoration: none ;
+    border-radius: 4px;
+}
+
+
+
 
 @media screen and (max-width:900px) {
     span{

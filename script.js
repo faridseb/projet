@@ -1,7 +1,6 @@
 const button = document.querySelector("#button");
 const popup = document.querySelector(".pop") ;
 const closes = document.querySelector(".fa-xmark") ;
-const  ensemble = document.querySelector(".all")
 
 
 button.onclick = () =>{
@@ -11,5 +10,10 @@ button.onclick = () =>{
 
 closes.onclick = () =>{
     popup.classList.remove("active")
-    ensemble.classList.remove("newe");
+    
 }
+
+
+
+
+
