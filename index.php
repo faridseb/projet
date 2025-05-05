@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="style2.css">
     <title>Formulaire de demande</title>
 </head>
+<style> 
+    .container h1 , .container p{
+    
+    color:black; 
+    
+}
+</style>
 <body>
     <header>
         <nav class="navbar">

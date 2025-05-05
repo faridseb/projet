@@ -28,13 +28,12 @@ $results = $resultat->fetchAll(PDO::FETCH_ASSOC);
 <body>
     <header>
         <nav class="navbar">
-            <a href="" class="logo">TACHETEC</a>
+            <a href="" class="logo" style="text-decoration:none;">TACHETEC</a>
             <div class="navlinks">
                 <ul>
                 <?php if(isset($_SESSION['chef'])) { ?>
                     <li>
                             <div class="conn1" style="color:black; font-weight:900;"><?=$_SESSION['chef']['nom']?> <?=$_SESSION['chef']['prenom']?></div>
-                            
                     </li>
                 <?php  } ?>
                     <li><a href="deconnect.php"><i class="fa-solid fa-right-from-bracket"></i>Deconnecter</a></li>

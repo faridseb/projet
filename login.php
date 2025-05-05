@@ -83,6 +83,13 @@ include "connect.php";
     <link rel="stylesheet" href="login.css">
     <title>Document</title>
 </head>
+<style>
+    .container{
+    
+    box-shadow: 30px 60px 53px #f2f2f2;
+
+}
+</style>
 <body class="all">
     <div class="container">
         <h1>CONNEXION AU COMPTE</h1>

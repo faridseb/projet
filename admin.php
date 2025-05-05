@@ -11,14 +11,29 @@
     <link rel="stylesheet" href="style2.css">
     <title>Formulaire de demande</title>
 </head>
+<style>
+.container h1 , .container p{
+    
+    color:black; 
+    
+}
+</style>
 <body>
-    <header>
+<header>
         <nav class="navbar">
-            <a href="" class="logo" style=" text-decoration: none;">TACHETEC</a>
+            <a href="" class="logo" style="text-decoration:none;">TACHETEC</a>
             <div class="navlinks">
                 <ul>
-                    <li><a href="projetv.php">Projet</a></li>
-                    <li><a href="projet.php">Ajouter Projet</a></li>
+                <li><a href="projetv.php">Projet</a></li>
+                <li><a href="projet.php">Ajouter Projet</a></li>
+                <li><a href="utilisateur.php">Ajouter utilisateur</a></li>
+                <li><a href="chef.php">Ajouter Chef</a></li>
+                <?php if(isset($_SESSION['chef'])) { ?>
+                    <li>
+                            <div class="conn1" style="color:black; font-weight:900;"><?=$_SESSION['chef']['nom']?> <?=$_SESSION['chef']['prenom']?></div>
+                            
+                    </li>
+                <?php  } ?>
                     <li><a href="deconnect.php"><i class="fa-solid fa-right-from-bracket"></i>Deconnecter</a></li>
                 </ul>
             </div>

@@ -27,7 +27,7 @@ include "connect.php";
                                     $requete->execute(
                                         array($nom,$prenom,$email,$mdp)
                                     );
-                                    header("location:login.php");
+                                    header("location: projetv.php");
                                 }
                             
                         }
@@ -56,6 +56,13 @@ include "connect.php";
     <link rel="stylesheet" href="login.css">
     <title>Formulaire Chef</title>
 </head>
+<style>
+    .container{
+    
+    box-shadow: 30px 60px 53px #f2f2f2;
+
+}
+</style>
 <body>
     <div class="container">
         <h1>INSCRIPTION  CHEFS</h1>

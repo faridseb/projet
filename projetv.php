@@ -34,31 +34,19 @@ $results = $resultat->fetchAll(PDO::FETCH_ASSOC);
                 <li><a href="projetv.php">Projet</a></li>
                 <li><a href="projet.php">Ajouter Projet</a></li>
                 <li><a href="utilisateur.php">Ajouter utilisateur</a></li>
-                <li><a href="chef.php">Ajouter Projet</a></li>
+                <li><a href="chef.php">Ajouter Chef</a></li>
                 <?php if(isset($_SESSION['chef'])) { ?>
                     <li>
                             <div class="conn1" style="color:black; font-weight:900;"><?=$_SESSION['chef']['nom']?> <?=$_SESSION['chef']['prenom']?></div>
                             
                     </li>
                 <?php  } ?>
-                    <li><a href="deconnect.php"><i class="fa-solid fa-right-from-bracket"></i>Deconnecter</a></li>
+                    <li><a href="deconnect.php"><i class="fa-solid fa-right-from-bracket"></i>Deconnecte</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <aside class="bares">
-        <ul>
-        
-            <p><i class="fa-solid fa-bars"></i></p>
-            <p><i class="fa-solid fa-xmark"></i></p>
-            <li id="icones"><a href="tableau.php"><i class="fa-solid fa-house"></i></a></li>
-            <li><a href="tableau.php" class="text"><i class="fa-solid fa-house"></i> Acceuil</a></li>
-            <li id="icones"><a href="tacheAll.php"><i class="fa-solid fa-square-pen"></i></a></li>
-            <li><a href="tacheAll.php" class="text"><i class="fa-solid fa-square-pen"></i> Listes des taches</a></li>
-            <li id="icones"><a href="outilsv.php"><i class="fa-solid fa-screwdriver-wrench"></i></a></li>
-            <li><a href="outilsv.php" class="text"><i class="fa-solid fa-screwdriver-wrench"></i> Outils</a></li>
-        </ul>
-    </aside>
+    
     <div class="container" style="width:900px;">
     <h1>Listes des  Projets</h1>
         <table class="table table-striped-columns">
@@ -76,7 +64,7 @@ $results = $resultat->fetchAll(PDO::FETCH_ASSOC);
                 <td><?=$result['lib_projet']?></td>
                 <td><?=$result['dateD']?></td>
                 <td><?=$result['dateF']?></td>
-                <td><a href="deletetache.php?id=<?=$result['id_projet']?>" style="background-color:black; padding:5px 30px;  border-radius: 4px;">Supprimer</a></td>
+                <td><a href="deleteprojet.php?id=<?=$result['id_projet']?>" style="background-color:black; padding:5px 30px;  border-radius: 4px;">Supprimer</a></td>
                 </tr>
             <?php } ?>
             <!-- <tr>

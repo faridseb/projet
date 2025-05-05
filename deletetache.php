@@ -4,11 +4,11 @@ include "connect.php";
 $id = $_GET['id'];
 
 
-$requete = $bdd->prepare("DELETE FROM projet WHERE id_projet=?");
+$requete = $bdd->prepare("DELETE FROM tache WHERE id_tache=?");
 $requete->execute(
     array($id)
 );
-header("location:projetv.php");
+header("location: tableauC.php");
 
 
 

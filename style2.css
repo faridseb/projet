@@ -11,7 +11,7 @@
 }
 
 body{
-    background: linear-gradient(to bottom right, #6a6a6a, #0074D9);
+    /* background: linear-gradient(to bottom right, #6a6a6a, #0074D9); */
     height: 100vh;
 }
 
@@ -143,7 +143,7 @@ aside ul li a{
 }
 .container h1{
     font-size: 40px;
-    color: white;
+    color:black;
     font-weight: 500 ;
 }
 .container p{

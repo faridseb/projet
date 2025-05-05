@@ -21,7 +21,7 @@ include "connect.php";
                                     $requete->execute(
                                         array($nomP,$DateD,$DateF,$chef)
                                     );
-                                    // header("location:pro.php");
+                                    header("location: projetv.php");
     }
 
     else{
@@ -158,39 +158,25 @@ aside ul li a{
     color: blue;
     font-weight: 500 ;
 }
+header .navbar a{
+    text-decoration :none; 
+}
 
 
 
+
+.container{
+    
+    box-shadow: 30px 60px 53px #f2f2f2;
+
+}
 
     
 </style>
 <body>
-<header>
-        <nav class="navbar">
-            <a href="" class="logo">TACHETEC</a>
-            <div class="navlinks">
-                <ul>
-                    <li><a href="projetv.php">Projet</a></li>
-                    <li><a href="projet.php">Ajouter Projet</a></li>
-                    <li><a href="deconnect.php"><i class="fa-solid fa-right-from-bracket"></i>Deconnecter</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
 
-    <aside class="bares">
-        <ul>
-        
-            <p><i class="fa-solid fa-bars"></i></p>
-            <p><i class="fa-solid fa-xmark"></i></p>
-            <li id="icones"><a href="tableau.php"><i class="fa-solid fa-house"></i></a></li>
-            <li><a href="tableau.php" class="text"><i class="fa-solid fa-house"></i> Acceuil</a></li>
-            <li id="icones"><a href="tacheAll.php"><i class="fa-solid fa-square-pen"></i></a></li>
-            <li><a href="tacheAll.php" class="text"><i class="fa-solid fa-square-pen"></i> Listes des taches</a></li>
-            <li id="icones"><a href="outilsv.php"><i class="fa-solid fa-screwdriver-wrench"></i></a></li>
-            <li><a href="outilsv.php" class="text"><i class="fa-solid fa-screwdriver-wrench"></i> Outils</a></li>
-        </ul>
-    </aside>
+
+   
 
     <div class="container" >
         <h1>AJOUTER DES PROJETS</h1>

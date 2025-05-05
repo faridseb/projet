@@ -17,6 +17,9 @@ if(isset($_POST['ok'])){
         $requete->execute(
             array($libelle,$lien,$projet)
         );
+        $message ="Outils enregistrer avec succes";
+        
+        
     }
     
 
@@ -37,7 +40,7 @@ if(isset($_POST['ok'])){
 </head>
 <style>
 body{
-    background: linear-gradient(to bottom right, #6a6a6a, #0074D9);
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,18 +66,26 @@ header .navbar .logo{
     margin:10px 30px;
 }
     
+
+    .container{
+    
+    box-shadow: 30px 60px 53px #f2f2f2;
+
+}
+
 </style>
 <body>
-    <header>
+<header>
         <nav class="navbar">
-            <a href="" class="logo" style=" text-decoration: none;">TACHETEC</a>
+            <a href="chefA.php" class="logo" style="text-decoration:none;">TACHETEC</a>
             <div class="navlinks">
                 <ul>
-                
+                    <li><a href="tableauC.php?id=<?=$id_pro?>">Listes des Taches</a></li>
+                    <li><a href="listeOutils.php?id=<?=$id_pro?>">Listes des Outil</a></li>
+                    <li><a href="tache.php?id=<?=$id_pro?>">Tache</a></li>
+                    <li><a href="outil.php?id=<?=$id_pro?>">Outils</a></li>
                     
-                <li><a href="outil.php?id=<?=$id_pro?>">Outils</a></li>
-                <li><a href="tache.php?id=<?=$id_pro?>">Tache</a></li>
-                <?php if(isset($_SESSION['chef'])) { ?>
+                    <?php if(isset($_SESSION['chef'])) { ?>
                     <li>
                             <div class="conn1" style="color:black; font-weight:900;"><?=$_SESSION['chef']['nom']?> <?=$_SESSION['chef']['prenom']?></div>
                             <!-- <div class="conn1" style="color: black;"><a href="deconnect.php"><i class="fa-solid fa-right-from-bracket"></i>Deconnecter</a></div> -->
@@ -90,17 +101,14 @@ header .navbar .logo{
         </nav>
     </header>
 
-    <!-- <aside>
-        <ul>
-            <li><a href="">Acceuil</a></li>
-            <li><a href="tableau.php">Listes des taches</a></li>
-            <li><a href="outilsv.php">Outils</a></li>
-        </ul>
-    </aside> -->
+
     
 <div class="container">
         <h1>OUTILS</h1>
         <form action="" method="post">
+        <?php if(isset($message)) { ?>
+            <p style= "backdrop-filter: blur(150px); box-shadow: 0 1px 5px black; color:green; margin-top: 10px; padding: 7px; text-align: center; font-weight: bold;"><?=$message?></p>;
+        <?php } ?>
             <div class="box">
                 <label for="">Objectif de l'outil :</label>
                 <input type="text" name="nomO" placeholder="Entrer le Nom de l'Outil" required>

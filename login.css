@@ -10,7 +10,7 @@
     font-weight: 300;
 }
 body{
-    background: linear-gradient(to bottom right, #6a6a6a, #0074D9);
+    /* background: linear-gradient(to bottom right, #6a6a6a, #0074D9); */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -46,6 +46,7 @@ header .navbar .navlinks ul li a:hover,span:hover{
 
 .container{
     background-color: white;
+    box-shadow: 1px 4px 3px black;
     padding: 30px;
     position: relative;
 }

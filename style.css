@@ -13,7 +13,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(to bottom right, #6a6a6a, #0074D9);
+    /* background: linear-gradient(to bottom right, #6a6a6a, #0074D9); */
 }
 .container h1{
     border-bottom: 1px solid black;

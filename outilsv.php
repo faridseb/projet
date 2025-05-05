@@ -32,6 +32,16 @@ include "connect.php" ;
     <link rel="stylesheet" href="style2.css">
     <title>Document</title>
 </head>
+<style>
+    header{
+        position: fixed;
+        top:0;
+        width:100%;
+    }
+    aside ul {
+        margin-top :115px;
+    }
+</style>
 <body>
     <header>
         <nav class="navbar">
