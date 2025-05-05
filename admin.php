@@ -46,10 +46,10 @@
             <p><i class="fa-solid fa-xmark"></i></p>
             <li id="icones"><a href=""><i class="fa-solid fa-house"></i></a></li>
             <li><a href="" class="text"><i class="fa-solid fa-house"></i> Acceuil</a></li>
-            <li id="icones"><a href="projet.php"><i class="fa-solid fa-square-pen"></i></a></li>
-            <li><a href="projet.php" class="text"><i class="fa-solid fa-square-pen"></i> Listes des taches</a></li>
-            <li id="icones"><a href="projetv.php"><i class="fa-solid fa-screwdriver-wrench"></i></a></li>
-            <li><a href="projetv.php" class="text"><i class="fa-solid fa-screwdriver-wrench"></i> Outils</a></li>
+            <li id="icones"><a href="listeUtilisateur.php"><i class="fa-solid fa-user"></i></a></li>
+            <li><a href="listeUtilisateur.php" class="text"><i class="fa-solid fa-user"></i> Listes des Utilisateur</a></li>
+            <li id="icones"><a href="listeChef.php"><i class="fa-solid fa-chess-king"></i></a></li>
+            <li><a href="listeChef.php" class="text"><i class="fa-solid fa-chess-king"></i> Listes des Chefs</a></li>
         </ul>
     </aside>
     <div class="container" style="width:100%;">

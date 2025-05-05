@@ -27,7 +27,7 @@ include "connect.php";
                                     $requete->execute(
                                         array($nom,$prenom,$email,$mdp)
                                     );
-                                    header("location: projetv.php");
+                                    header("location: listeChef.php");
                                 }
                             
                         }

@@ -28,7 +28,7 @@ include "connect.php";
                                     $requete->execute(
                                         array($nom,$prenom,$email,$mdp,$role)
                                     );
-                                    header("location: projetv.php");
+                                    header("location: listeUtilisateur.php");
                                 }
                             
                         }
